@@ -115,6 +115,58 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Cloud Platform",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
     },
+
+    // ML / PYTHON
+    {
+      name: "PyTorch",
+      type: "Machine Learning Framework",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+    },
+    {
+      name: "TensorFlow",
+      type: "Machine Learning Framework",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+    },
+    {
+      name: "Scikit-learn",
+      type: "Machine Learning Library",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+    },
+    {
+      name: "Keras",
+      type: "Deep Learning API",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
+    },
+    {
+      name: "NumPy",
+      type: "Scientific Computing Library",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+    },
+    {
+      name: "SciPy",
+      type: "Scientific Computing Library",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg",
+    },
+    {
+      name: "Pandas",
+      type: "Data Analysis Library",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+    },
+    {
+      name: "Matplotlib",
+      type: "Data Visualization Library",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
+    },
+    {
+      name: "OpenCV",
+      type: "Computer Vision Library",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
+    },
+    {
+      name: "n8n",
+      type: "Workflow Automation Tool",
+      logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/n8n.svg",
+    },
   ];
 
   stacks.forEach((stack) => {
