@@ -158,6 +158,11 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
     },
     {
+      name: "Seaborn",
+      type: "Data Visualization Library",
+      logo: "https://seaborn.pydata.org/_static/logo-mark-lightbg.svg",
+    },
+    {
       name: "OpenCV",
       type: "Computer Vision Library",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
@@ -166,6 +171,11 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "n8n",
       type: "Workflow Automation Tool",
       logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/n8n.svg",
+    },
+    {
+      name: "Jupyter Notebook",
+      type: "Data Science Environment",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
     },
   ];
 
