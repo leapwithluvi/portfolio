@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     card.setAttribute("data-aos", "fade-right");
-    card.setAttribute("data-aos-delay", `${idx * 100}`);
+    card.setAttribute("data-aos-delay", `${idx * 101}`);
 
     logoWrapper.classList.add("flex-shrink-0");
     logoImg.classList.add("h-10", "w-15");
