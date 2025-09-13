@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  stacks.forEach((stack) => {
+  stacks.forEach((stack, idx) => {
     const card = document.createElement("div");
     const logoWrapper = document.createElement("div");
     const logoImg = document.createElement("img");
@@ -139,6 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "transition-shadow",
       "duration-300"
     );
+
+    card.setAttribute("data-aos", "fade-right");
+    card.setAttribute("data-aos-delay", `${idx * 100}`);
+
     logoWrapper.classList.add("flex-shrink-0");
     logoImg.classList.add("h-10", "w-15");
     textWrapper.classList.add("flex-1", "hidden", "sm:block");
