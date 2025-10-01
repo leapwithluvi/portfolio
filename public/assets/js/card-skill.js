@@ -27,12 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
       url: "https://isocpp.org/",
     },
-    {
-      name: "C#",
-      type: "Programming Language",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-      url: "https://dotnet.microsoft.com/en-us/languages/csharp",
-    },
 
     // FRONTEND
     {
@@ -40,6 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "JavaScript Library",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       url: "https://react.dev/",
+    },
+    {
+      name: "React Native",
+      type: "Framework",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", // biasanya pakai logo React
+      url: "https://reactnative.dev/",
     },
     {
       name: "Next.js",
