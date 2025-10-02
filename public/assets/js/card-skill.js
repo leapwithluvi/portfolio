@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
       url: "https://www.python.org/",
     },
-    {
-      name: "C++",
-      type: "Programming Language",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-      url: "https://isocpp.org/",
-    },
+    // {
+    //   name: "C++",
+    //   type: "Programming Language",
+    //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    //   url: "https://isocpp.org/",
+    // },
 
     // FRONTEND
     {
@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", // biasanya pakai logo React
       url: "https://reactnative.dev/",
     },
-    {
-      name: "Next.js",
-      type: "React Framework",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      url: "https://nextjs.org/",
-    },
+    // {
+    //   name: "Next.js",
+    //   type: "React Framework",
+    //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    //   url: "https://nextjs.org/",
+    // },
 
     // NODE
     {
@@ -167,12 +167,12 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
       url: "https://numpy.org/",
     },
-    {
-      name: "SciPy",
-      type: "Scientific Computing Library",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg",
-      url: "https://scipy.org/",
-    },
+    // {
+    //   name: "SciPy",
+    //   type: "Scientific Computing Library",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg",
+    //   url: "https://scipy.org/",
+    // },
     {
       name: "Pandas",
       type: "Data Analysis Library",
@@ -191,12 +191,12 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://seaborn.pydata.org/_static/logo-mark-lightbg.svg",
       url: "https://seaborn.pydata.org/",
     },
-    {
-      name: "OpenCV",
-      type: "Computer Vision Library",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
-      url: "https://opencv.org/",
-    },
+    // {
+    //   name: "OpenCV",
+    //   type: "Computer Vision Library",
+    //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
+    //   url: "https://opencv.org/",
+    // },
     {
       name: "Google Colab",
       type: "Cloud Notebook Environment",
@@ -215,36 +215,36 @@ document.addEventListener("DOMContentLoaded", () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg",
       url: "https://www.kaggle.com/",
     },
-    {
-      name: "Hugging Face",
-      type: "AI/ML Platform",
-      logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/huggingface.svg",
-      url: "https://huggingface.co/",
-    },
-    {
-      name: "n8n",
-      type: "Workflow Automation Tool",
-      logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/n8n.svg",
-      url: "https://n8n.io/",
-    },
+    // {
+    //   name: "Hugging Face",
+    //   type: "AI/ML Platform",
+    //   logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/huggingface.svg",
+    //   url: "https://huggingface.co/",
+    // },
+    // {
+    //   name: "n8n",
+    //   type: "Workflow Automation Tool",
+    //   logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/n8n.svg",
+    //   url: "https://n8n.io/",
+    // },
     {
       name: "Ollama",
       type: "Local LLM Framework",
       logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ollama.svg",
       url: "https://ollama.com/",
     },
-    {
-      name: "LangChain",
-      type: "LLM Framework",
-      logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/langchain.svg",
-      url: "https://www.langchain.com/",
-    },
-    {
-      name: "Lightning AI",
-      type: "Deep Learning Framework",
-      logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lightning.svg",
-      url: "https://lightning.ai/",
-    },
+    // {
+    //   name: "LangChain",
+    //   type: "LLM Framework",
+    //   logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/langchain.svg",
+    //   url: "https://www.langchain.com/",
+    // },
+    // {
+    //   name: "Lightning AI",
+    //   type: "Deep Learning Framework",
+    //   logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lightning.svg",
+    //   url: "https://lightning.ai/",
+    // },
   ];
 
   stacks.forEach((stack, idx) => {
