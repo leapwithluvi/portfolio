@@ -1,57 +1,73 @@
-# Halo\! 👋 Saya Luvi Aprilyansyah Gabriel
+# React + TypeScript + Vite
 
-### 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Selamat datang di repository saya\! Portofolio ini adalah representasi dari proyek, keahlian, dan semangat saya dalam dunia. Saya berfokus pada `Website`, `AI`, `Machine Learning`, dan `Game Developer`.
+Currently, two official plugins are available:
 
------
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-<!-- ## 🚀 Sekilas tentang Saya
+## React Compiler
 
-  * **Minat:** Saya memiliki minat yang mendalam dalam.
-  * **Saat Ini Saya Bekerja dengan:**.
-  * **Mencari:** Saya secara aktif mencari peluang di.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 📂 Proyek Unggulan
+## Expanding the ESLint configuration
 
-Berikut adalah beberapa proyek terbaik saya. Setiap proyek mencerminkan keterampilan yang saya pelajari dan tantangan yang saya hadapi.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-### [Nama Proyek 1]
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-  - **Deskripsi:**
-  - **Teknologi yang Digunakan:**
-  - **Fitur Kunci:**.
-  - **Kunjungi:**
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-### [Nama Proyek 2]
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-  - **Deskripsi:**
-  - **Teknologi yang Digunakan:**
-  - **Fitur Kunci:**.
-  - **Kunjungi:**
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
------
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-## 🛠 Keahlian Saya
-
-\!([https://skillicons.dev/icons?i=git,html,css,js,react,nodejs,python,docker](https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dgit,html,css,js,react,nodejs,python,docker))
-
-\<br\>
-
-## 📈 Statistik GitHub Saya
-
-\<p align="center"\>
-\<img src="[https://github-readme-stats.vercel.app/api?username=NAMA-PENGGUNA-ANDA\&show\_icons=true\&theme=dark](https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DNAMA-PENGGUNA-ANDA%26show_icons%3Dtrue%26theme%3Ddark)" alt="Statistik GitHub" /\>
-\<img src="[https://github-readme-stats.vercel.app/api/top-langs/?username=NAMA-PENGGUNA-ANDA\&layout=compact\&theme=dark](https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DNAMA-PENGGUNA-ANDA%26layout%3Dcompact%26theme%3Ddark)" alt="Bahasa yang Digunakan" /\>
-\</p\>
-
------ -->
-
-<!-- ## 🤝 Mari Terhubung\!
-
-Saya selalu terbuka untuk kolaborasi dan diskusi. Jangan ragu untuk menghubungi saya\!
-
-  * **LinkedIn:** 
-  * **Email:** itsluvi13@gmail.com
-  * **Instagram:** @byl.rooks -->
-  <!-- * **Situs Web/Blog:** -->
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
