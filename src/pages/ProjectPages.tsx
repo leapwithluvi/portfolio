@@ -110,7 +110,7 @@ export const ProjectPages = () => {
             >
               <CardProject
                 {...card}
-                srcImg="./public/assets/images/Natori.jpeg"
+                srcImg="/public/assets/images/Natori.jpeg"
                 imgAlt="Image Project"
               />
             </motion.div>
