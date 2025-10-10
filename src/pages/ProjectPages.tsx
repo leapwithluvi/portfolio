@@ -41,7 +41,7 @@ export const ProjectPages = () => {
             deskProject="The AI Chatbot is an interactive web application that allows users to communicate with a large language model (LLM) locally and privately. Built using Ollama and Google's Gemma 2 model, this application offers an experience similar to ChatGPT or Gemini, but runs entirely on your device without reliance on external servers."
             status="On-Going"
             linkRepo="https://github.com/leapwithluvi/ai-chatbot"
-            srcImg="../../public/assets/images/Natori.jpeg"
+            srcImg="./assets/images/Natori.jpeg"
             imgAlt="Image Project"
           />
           <CardProject
@@ -52,7 +52,7 @@ export const ProjectPages = () => {
 This API supports essential authentication features such as user registration, login, and password recovery, with JWT-based authentication ensuring secure communication. Future updates will include OAuth integration for third-party login support."
             status="On-Going"
             linkRepo="https://github.com/leapwithluvi/backend-auth-api"
-            srcImg="../../public/assets/images/Natori.jpeg"
+            srcImg="./assets/images/Natori.jpeg"
             imgAlt="Image Project"
           />
           <CardProject
@@ -61,7 +61,7 @@ This API supports essential authentication features such as user registration, l
             deskProject="A web application for a school library system that allows students to log in using NIS/NISN, browse the book catalog, and manage borrowing and returning books digitally. This system is designed to simplify book management, track student borrowings, and improve library operations."
             status="On-Going"
             linkRepo="https://github.com/leapwithluvi/perpustakaan-sederhana"
-            srcImg="../../public/assets/images/Natori.jpeg"
+            srcImg="./assets/images/Natori.jpeg"
             imgAlt="Image Project"
           />
           <CardProject
@@ -70,7 +70,7 @@ This API supports essential authentication features such as user registration, l
             deskProject="Zona Game Tenggarong is a one-stop destination for PlayStation enthusiasts in Tenggarong. We offer a wide range of PlayStation-related products and services, including consoles, PS controllers, and games for PS3, PS4, and PS5. Additionally, we provide PlayStation rental services for a convenient and enjoyable gaming experience."
             status="On-Going"
             linkRepo="https://github.com/leapwithluvi/zonagame-tenggarong"
-            srcImg="../../public/assets/images/Natori.jpeg"
+            srcImg="./assets/images/Natori.jpeg"
             imgAlt="Image Project"
           />
           <CardProject
@@ -79,7 +79,7 @@ This API supports essential authentication features such as user registration, l
             deskProject="Trace Personal is a workplace wellness platform designed to encourage healthy habits, team bonding, and employee engagement. It allows employees to log their daily wellness activities (hydration, sleep, workouts), participate in company-wide health challenges, and track progress on leaderboards. The platform promotes overall well-being while fostering friendly competition among employees."
             status="On-Going"
             linkRepo="https://github.com/leapwithluvi/TracePersonal"
-            srcImg="../../public/assets/images/Natori.jpeg"
+            srcImg="./assets/images/Natori.jpeg"
             imgAlt="Image Project"
           />
           <CardProject
@@ -88,7 +88,7 @@ This API supports essential authentication features such as user registration, l
             deskProject="The OSIS President Voting System is a streamlined and secure application designed to facilitate the election of the Student Council President. This system provides a user-friendly interface for students to cast their votes efficiently while ensuring vote integrity and transparency. It aims to simplify the election process, making it faster, more organized, and reliable."
             status="Complete"
             linkRepo="https://github.com/leapwithluvi/ketos-voting-system"
-            srcImg="../../public/assets/images/Natori.jpeg"
+            srcImg="./assets/images/Natori.jpeg"
             imgAlt="Image Project"
           />
         </div>
