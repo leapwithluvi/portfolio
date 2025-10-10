@@ -1,4 +1,3 @@
-import React from "react";
 import { DataSkills } from "../utils/DataSkills";
 
 export const CardSkills = () => {
@@ -29,7 +28,6 @@ export const CardSkills = () => {
             />
           </div>
 
-          {/* Teks (disembunyikan di HP) */}
           <div className="hidden sm:flex flex-col">
             <h3 className="text-base font-semibold text-gray-900">
               {stack.name}
