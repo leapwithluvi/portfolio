@@ -37,7 +37,7 @@ export const HeroPages = () => {
           </p>
 
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-gray-900 tracking-tight md:whitespace-nowrap md:text-left"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-gray-900 tracking-tight md:whitespace-nowrap md:text-left"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -106,7 +106,7 @@ export const HeroPages = () => {
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
         >
           <motion.img
-            src="./assets/images/Natori.jpeg"
+            src="/src/assets/Natori.jpeg"
             alt="Luvi Portrait"
             className="h-[420px] w-[300px] object-cover rounded-2xl shadow-lg"
             whileHover={{ scale: 1.05 }}
