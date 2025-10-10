@@ -37,7 +37,9 @@ export const CardProject = (data: cardProjectTypes) => {
         <h1 className="font-medium text-lg mb-2 hover:text-indigo-600">
           {nameProject}
         </h1>
-        <p className="text-gray-500 text-sm">{deskProject}</p>
+        <p className="text-sm text-gray-600 font-serif min-h-[120px]">
+          {deskProject}
+        </p>
       </div>
       <div className="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
         <span className="flex flex-col items-center">

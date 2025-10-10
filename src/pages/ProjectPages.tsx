@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { CardProject } from "../components/CardProject";
 import { Sidebar } from "../components/Sidebar";
 
@@ -7,9 +8,16 @@ export const ProjectPages = () => {
       {/* SIDEBAR */}
       <Sidebar num="04" title="Project" />
 
-      {/* <!-- KONTEN --> */}
-      <div className="flex flex-col">
-        <div className="flex items-center gap-2 mb-6" data-aos="fade-down">
+      {/* KONTEN */}
+      <div className="flex flex-col w-full">
+        {/* Judul */}
+        <motion.div
+          className="flex items-center gap-2 mb-6"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -17,80 +25,96 @@ export const ProjectPages = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#CA8A04"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path d="M20 17a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.9a2 2 0 0 1-1.69-.9l-.81-1.2a2 2 0 0 0-1.67-.9H8a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2Z"></path>
-            <path d="M2 8v11a2 2 0 0 0 2 2h14"></path>
+            <path d="M20 17a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.9a2 2 0 0 1-1.69-.9l-.81-1.2a2 2 0 0 0-1.67-.9H8a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2Z" />
+            <path d="M2 8v11a2 2 0 0 0 2 2h14" />
           </svg>
           <h1 className="text-4xl font-serif">My Projects</h1>
-        </div>
-        <p
+        </motion.div>
+
+        {/* Deskripsi */}
+        <motion.p
           className="justify-center max-w-[600px] font-serif pb-12"
-          data-aos="fade-up"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           These are some of my featured projects...
-        </p>
+        </motion.p>
 
-        {/*  CARD PROJECT */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          <CardProject
-            nameProject="AI Chatbot - Interactive Website with Ollama Gemma 2"
-            typeProject="Website"
-            deskProject="The AI Chatbot is an interactive web application that allows users to communicate with a large language model (LLM) locally and privately. Built using Ollama and Google's Gemma 2 model, this application offers an experience similar to ChatGPT or Gemini, but runs entirely on your device without reliance on external servers."
-            status="On-Going"
-            linkRepo="https://github.com/leapwithluvi/ai-chatbot"
-            srcImg="../../public/assets/images/Natori.jpeg"
-            imgAlt="Image Project"
-          />
-          <CardProject
-            nameProject="Backend Auth API"
-            typeProject="Backend"
-            deskProject="The Backend Auth API is a robust and scalable backend solution designed to handle user authentication and authorization efficiently. Built with modern technologies, it ensures secure access to protected resources while providing a modular and maintainable project structure.
-
-This API supports essential authentication features such as user registration, login, and password recovery, with JWT-based authentication ensuring secure communication. Future updates will include OAuth integration for third-party login support."
-            status="On-Going"
-            linkRepo="https://github.com/leapwithluvi/backend-auth-api"
-            srcImg="../../public/assets/images/Natori.jpeg"
-            imgAlt="Image Project"
-          />
-          <CardProject
-            nameProject="Simple School Library"
-            typeProject="Website"
-            deskProject="A web application for a school library system that allows students to log in using NIS/NISN, browse the book catalog, and manage borrowing and returning books digitally. This system is designed to simplify book management, track student borrowings, and improve library operations."
-            status="On-Going"
-            linkRepo="https://github.com/leapwithluvi/perpustakaan-sederhana"
-            srcImg="../../public/assets/images/Natori.jpeg"
-            imgAlt="Image Project"
-          />
-          <CardProject
-            nameProject="Zona Game Tenggarong - PlayStation Store & Game Rental"
-            typeProject="Website"
-            deskProject="Zona Game Tenggarong is a one-stop destination for PlayStation enthusiasts in Tenggarong. We offer a wide range of PlayStation-related products and services, including consoles, PS controllers, and games for PS3, PS4, and PS5. Additionally, we provide PlayStation rental services for a convenient and enjoyable gaming experience."
-            status="On-Going"
-            linkRepo="https://github.com/leapwithluvi/zonagame-tenggarong"
-            srcImg="../../public/assets/images/Natori.jpeg"
-            imgAlt="Image Project"
-          />
-          <CardProject
-            nameProject="Trace Personal"
-            typeProject="Website"
-            deskProject="Trace Personal is a workplace wellness platform designed to encourage healthy habits, team bonding, and employee engagement. It allows employees to log their daily wellness activities (hydration, sleep, workouts), participate in company-wide health challenges, and track progress on leaderboards. The platform promotes overall well-being while fostering friendly competition among employees."
-            status="On-Going"
-            linkRepo="https://github.com/leapwithluvi/TracePersonal"
-            srcImg="../../public/assets/images/Natori.jpeg"
-            imgAlt="Image Project"
-          />
-          <CardProject
-            nameProject="OSIS President Voting System"
-            typeProject="Website"
-            deskProject="The OSIS President Voting System is a streamlined and secure application designed to facilitate the election of the Student Council President. This system provides a user-friendly interface for students to cast their votes efficiently while ensuring vote integrity and transparency. It aims to simplify the election process, making it faster, more organized, and reliable."
-            status="Complete"
-            linkRepo="https://github.com/leapwithluvi/ketos-voting-system"
-            srcImg="../../public/assets/images/Natori.jpeg"
-            imgAlt="Image Project"
-          />
+        {/* CARD PROJECT */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 items-stretch">
+          {[
+            {
+              nameProject:
+                "AI Chatbot - Interactive Website with Ollama Gemma 2",
+              typeProject: "Website",
+              deskProject:
+                "AI Chatbot is an interactive web platform that enables users to communicate directly with a local large language model (LLM). Built using Ollama and Google's Gemma 2 model, it provides a ChatGPT-like experience while ensuring complete privacy and offline functionality. Users can chat, analyze data, or brainstorm ideas efficiently without sending information to external servers. The system is designed for both developers and general users seeking secure AI interactions.",
+              status: "On-Going",
+              linkRepo: "https://github.com/leapwithluvi/ai-chatbot",
+            },
+            {
+              nameProject: "Backend Auth API",
+              typeProject: "Backend",
+              deskProject:
+                "Backend Auth API is a secure and modular authentication service built for scalability and integration. It supports essential features like user registration, login, and password reset with JWT-based authentication. The architecture is designed to be easily integrated with any web or mobile frontend, following RESTful principles. This project aims to simplify user management while maintaining best practices for performance and security.",
+              status: "On-Going",
+              linkRepo: "https://github.com/leapwithluvi/backend-auth-api",
+            },
+            {
+              nameProject: "Simple School Library",
+              typeProject: "Website",
+              deskProject:
+                "Simple School Library is a modern web application that helps schools manage their digital library system efficiently. Students can log in using their NIS/NISN, explore the book catalog, and borrow or return books through an intuitive interface. The system includes admin tools for book inventory, borrowing records, and late return notifications. It aims to transform traditional library management into a smart and paperless experience.",
+              status: "On-Going",
+              linkRepo:
+                "https://github.com/leapwithluvi/perpustakaan-sederhana",
+            },
+            {
+              nameProject: "Zona Game Tenggarong - PlayStation Store & Rental",
+              typeProject: "Website",
+              deskProject:
+                "Zona Game Tenggarong is a web-based platform for PlayStation enthusiasts to browse, rent, and purchase gaming products. The website features a digital catalog for PS3, PS4, and PS5 consoles, games, and accessories. It also provides online booking for console rental services and store promotions. Built with a focus on clean UI and responsive design, this platform helps local customers easily access gaming products from their devices.",
+              status: "On-Going",
+              linkRepo: "https://github.com/leapwithluvi/zonagame-tenggarong",
+            },
+            {
+              nameProject: "Trace Personal",
+              typeProject: "Website",
+              deskProject:
+                "Trace Personal is a workplace wellness platform designed to encourage healthy habits, team bonding, and employee engagement. It allows employees to log their daily wellness activities (hydration, sleep, workouts), participate in company-wide health challenges, and track progress on leaderboards. The platform promotes overall well-being while fostering friendly competition among employees.",
+              status: "On-Going",
+              linkRepo: "https://github.com/leapwithluvi/TracePersonal",
+            },
+            {
+              nameProject: "OSIS President Voting System",
+              typeProject: "Website",
+              deskProject:
+                "The OSIS President Voting System is a secure digital election platform developed to streamline the voting process for student council elections. It enables students to cast their votes online safely and transparently. With a responsive interface, real-time vote counting, and admin management features, it ensures fair and organized elections. This system aims to modernize traditional voting methods within schools and student organizations.",
+              status: "Complete",
+              linkRepo: "https://github.com/leapwithluvi/ketos-voting-system",
+            },
+          ].map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="flex h-full"
+            >
+              <CardProject
+                {...card}
+                srcImg="../../public/assets/images/Natori.jpeg"
+                imgAlt="Image Project"
+              />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
