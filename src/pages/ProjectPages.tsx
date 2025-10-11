@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { CardProject } from "../components/CardProject";
 import { Sidebar } from "../components/Sidebar";
 
+// Images
+import chatbot from "../../public/img/chatbot.png";
+import portfolio from "../../public/img/portfolio.png";
+import backend from "../../public/img/backend.png";
+import osis from "../../public/img/osis.png";
+import progress from "../../public/img/progress.png";
+
 export const ProjectPages = () => {
   return (
     <section className="flex items-center h-auto px-6 md:px-12 py-12">
@@ -57,6 +64,7 @@ export const ProjectPages = () => {
                 "AI Chatbot is an interactive web platform that enables users to communicate directly with a local large language model (LLM). Built using Ollama and Google's Gemma 2 model, it provides a ChatGPT-like experience while ensuring complete privacy and offline functionality. Users can chat, analyze data, or brainstorm ideas efficiently without sending information to external servers. The system is designed for both developers and general users seeking secure AI interactions.",
               status: "On-Going",
               linkRepo: "https://github.com/leapwithluvi/ai-chatbot",
+              srcImg: chatbot,
             },
             {
               nameProject: "Backend Auth API",
@@ -65,6 +73,7 @@ export const ProjectPages = () => {
                 "Backend Auth API is a secure and modular authentication service built for scalability and integration. It supports essential features like user registration, login, and password reset with JWT-based authentication. The architecture is designed to be easily integrated with any web or mobile frontend, following RESTful principles. This project aims to simplify user management while maintaining best practices for performance and security.",
               status: "On-Going",
               linkRepo: "https://github.com/leapwithluvi/backend-auth-api",
+              srcImg: backend,
             },
             {
               nameProject: "Simple School Library",
@@ -74,6 +83,7 @@ export const ProjectPages = () => {
               status: "On-Going",
               linkRepo:
                 "https://github.com/leapwithluvi/perpustakaan-sederhana",
+              srcImg: progress,
             },
             {
               nameProject: "Zona Game Tenggarong - PlayStation Store & Rental",
@@ -82,15 +92,26 @@ export const ProjectPages = () => {
                 "Zona Game Tenggarong is a web-based platform for PlayStation enthusiasts to browse, rent, and purchase gaming products. The website features a digital catalog for PS3, PS4, and PS5 consoles, games, and accessories. It also provides online booking for console rental services and store promotions. Built with a focus on clean UI and responsive design, this platform helps local customers easily access gaming products from their devices.",
               status: "On-Going",
               linkRepo: "https://github.com/leapwithluvi/zonagame-tenggarong",
+              srcImg: progress,
             },
+            // {
+            //   nameProject: "Trace Personal",
+            //   typeProject: "Website",
+            //   deskProject:
+            //     "Trace Personal is a workplace wellness platform designed to encourage healthy habits, team bonding, and employee engagement. It allows employees to log their daily wellness activities (hydration, sleep, workouts), participate in company-wide health challenges, and track progress on leaderboards. The platform promotes overall well-being while fostering friendly competition among employees.",
+            //   status: "On-Going",
+            //   linkRepo: "https://github.com/leapwithluvi/TracePersonal",
+            // },
             {
-              nameProject: "Trace Personal",
+              nameProject: "Portfolio",
               typeProject: "Website",
               deskProject:
-                "Trace Personal is a workplace wellness platform designed to encourage healthy habits, team bonding, and employee engagement. It allows employees to log their daily wellness activities (hydration, sleep, workouts), participate in company-wide health challenges, and track progress on leaderboards. The platform promotes overall well-being while fostering friendly competition among employees.",
-              status: "On-Going",
-              linkRepo: "https://github.com/leapwithluvi/TracePersonal",
+                "Portfolio is a personal website designed to showcase my projects, skills, and experience in web development. Built with Vite, React, Tailwind CSS, and Framer Motion, it features smooth animations, responsive design, and a clean modern interface. This website serves as both a creative space and a professional platform to highlight my journey as a developer.",
+              status: "Complete",
+              linkRepo: "https://github.com/leapwithluvi/portfolio",
+              srcImg: portfolio,
             },
+
             {
               nameProject: "OSIS President Voting System",
               typeProject: "Website",
@@ -98,6 +119,7 @@ export const ProjectPages = () => {
                 "The OSIS President Voting System is a secure digital election platform developed to streamline the voting process for student council elections. It enables students to cast their votes online safely and transparently. With a responsive interface, real-time vote counting, and admin management features, it ensures fair and organized elections. This system aims to modernize traditional voting methods within schools and student organizations.",
               status: "Complete",
               linkRepo: "https://github.com/leapwithluvi/ketos-voting-system",
+              srcImg: osis,
             },
           ].map((card, index) => (
             <motion.div
@@ -108,11 +130,7 @@ export const ProjectPages = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="flex h-full"
             >
-              <CardProject
-                {...card}
-                srcImg="/src/assets/Natori.jpeg"
-                imgAlt="Image Project"
-              />
+              <CardProject {...card} imgAlt="Image Project" />
             </motion.div>
           ))}
         </div>

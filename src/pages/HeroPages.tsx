@@ -2,10 +2,11 @@ import "../index.css";
 import { Sidebar } from "../components/Sidebar";
 import { Button } from "../components/Button";
 import { motion } from "framer-motion";
+import Natori from "../../public/img/Natori.jpeg";
 
 export const HeroPages = () => {
   return (
-    <section className="relative flex h-screen items-center justify-center px-6 md:px-12 lg:px-24 bg-white overflow-hidden">
+    <section className="relative flex h-[550px] items-center justify-center px-6 md:px-12 lg:px-24 bg-white overflow-hidden">
       {/* Sidebar */}
       <Sidebar num="01" title="Hero" />
 
@@ -106,7 +107,7 @@ export const HeroPages = () => {
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
         >
           <motion.img
-            src="/src/assets/Natori.jpeg"
+            src={Natori}
             alt="Luvi Portrait"
             className="h-[420px] w-[300px] object-cover rounded-2xl shadow-lg"
             whileHover={{ scale: 1.05 }}

@@ -2,7 +2,7 @@ interface cardProjectTypes {
   nameProject: string;
   deskProject: string;
   status: string;
-  srcImg: string;
+  srcImg?: string;
   imgAlt: string;
   linkRepo: string;
   typeProject: string;
