@@ -1,0 +1,111 @@
+export const DataSkillsML = [
+  // ML / PYTHON
+  // {
+  //   name: "PyTorch",
+  //   type: "Machine Learning Framework",
+  //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+  //   url: "https://pytorch.org/",
+  // },
+  // {
+  //   name: "TensorFlow",
+  //   type: "Machine Learning Framework",
+  //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+  //   url: "https://www.tensorflow.org/",
+  // },
+  {
+    name: "Scikit-learn",
+    type: "Machine Learning Library",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+    url: "https://scikit-learn.org/",
+  },
+  // {
+  //   name: "Keras",
+  //   type: "Deep Learning API",
+  //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
+  //   url: "https://keras.io/",
+  // },
+  {
+    name: "NumPy",
+    type: "Scientific Computing Library",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+    url: "https://numpy.org/",
+  },
+  // {
+  //   name: "SciPy",
+  //   type: "Scientific Computing Library",
+  //   logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg",
+  //   url: "https://scipy.org/",
+  // },
+  {
+    name: "Pandas",
+    type: "Data Analysis Library",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+    url: "https://pandas.pydata.org/",
+  },
+  {
+    name: "Matplotlib",
+    type: "Data Visualization Library",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
+    url: "https://matplotlib.org/",
+  },
+  // {
+  //   name: "Seaborn",
+  //   type: "Data Visualization Library",
+  //   logo: "https://seaborn.pydata.org/_static/logo-mark-lightbg.svg",
+  //   url: "https://seaborn.pydata.org/",
+  // },
+  // {
+  //   name: "OpenCV",
+  //   type: "Computer Vision Library",
+  //   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
+  //   url: "https://opencv.org/",
+  // },
+  {
+    name: "Google Colab",
+    type: "Cloud Notebook Environment",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg",
+    url: "https://colab.research.google.com/",
+  },
+  {
+    name: "Jupyter Notebook",
+    type: "Data Science Environment",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
+    url: "https://jupyter.org/",
+  },
+  {
+    name: "Kaggle",
+    type: "Data Science Platform",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg",
+    url: "https://www.kaggle.com/",
+  },
+  // {
+  //   name: "Hugging Face",
+  //   type: "AI/ML Platform",
+  //   logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/huggingface.svg",
+  //   url: "https://huggingface.co/",
+  // },
+  // {
+  //   name: "n8n",
+  //   type: "Workflow Automation Tool",
+  //   logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/n8n.svg",
+  //   url: "https://n8n.io/",
+  // },
+  {
+    name: "Ollama",
+    type: "Local LLM Framework",
+    logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ollama.svg",
+    url: "https://ollama.com/",
+  },
+  // {
+  //   name: "LangChain",
+  //   type: "LLM Framework",
+  //   logo: "https://cdn.jsdelivr.net/npm/simple-icons@12/icons/langchain.svg",
+  //   url: "https://www.langchain.com/",
+  // },
+  // {
+  //   name: "Lightning AI",
+  //   type: "Deep Learning Framework",
+  //   logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lightning.svg",
+  //   url: "https://lightning.ai/",
+  // },
+];
