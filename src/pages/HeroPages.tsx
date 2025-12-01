@@ -2,116 +2,78 @@ import "../index.css";
 import { Sidebar } from "../components/Sidebar";
 import { Button } from "../components/Button";
 import { motion } from "framer-motion";
+import { ArrowUpRight, Download, Laptop } from "lucide-react";
 import Natori from "../../public/img/Natori.jpeg";
 
 export const HeroPages = () => {
   return (
-    <section className="relative flex h-[550px] items-center justify-center px-6 md:px-12 lg:px-24 bg-white overflow-hidden">
-      {/* Sidebar */}
+    <section className="flex items-center w-full bg-white px-6 md:px-12 lg:px-24 py-16 md:py-24 overflow-hidden">
       <Sidebar num="01" title="Hero" />
 
-      {/* Grid Container */}
-      <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-12 w-full max-w-7xl mx-auto">
-        {/* Text Content */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        {/* TEXT */}
         <motion.div
           className="flex flex-col gap-4"
-          initial={{ opacity: 0, x: -80 }}
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
         >
           <p className="flex items-center gap-2 text-lg font-medium text-yellow-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#CA8A04"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect width="18" height="12" x="3" y="4" rx="2" ry="2"></rect>
-              <line x1="2" x2="22" y1="20" y2="20"></line>
-            </svg>
-            Aspiring Fullstack Developer
+            <Laptop size={28} className="text-yellow-600" />
+            Aspiring Fullstack Developer & AI/ML Engineer
           </p>
 
           <motion.h1
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-gray-900 tracking-tight md:whitespace-nowrap md:text-left"
-            initial={{ opacity: 0, y: 40 }}
+            className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-gray-900"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
           >
             Luvi Aprilyansyah Gabriel
           </motion.h1>
 
           <motion.p
-            className="text-lg mt-3 max-w-md text-gray-700"
-            initial={{ opacity: 0, y: 40 }}
+            className="text-base md:text-lg text-gray-700 max-w-md"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Hi! I'm Luvi, an aspiring Fullstack & AI/ML Engineer. Feel free to
-            reach out via email or connect with me on LinkedIn and GitHub. I'd
-            love to hear from you!
+            Hi! I'm Luvi, a Fullstack Developer passionate about building modern
+            web applications and exploring AI/ML technologies. Feel free to
+            reach out via email or connect with me on LinkedIn and GitHub!
           </motion.p>
 
-          {/* Buttons */}
           <motion.div
-            className="mt-6 flex flex-col sm:flex-row gap-3"
-            initial={{ opacity: 0, y: 40 }}
+            className="mt-4 flex flex-col sm:flex-row gap-3"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
           >
             <a
               href="#about"
-              className="flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium 
-              border border-gray-800 rounded-lg hover:bg-gray-900 hover:text-white 
-              transition-all duration-300"
+              className="flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium border border-gray-800 rounded-lg hover:bg-gray-900 hover:text-white transition duration-300"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
+              <ArrowUpRight size={20} />
               Explore
             </a>
 
-            <Button
-              buttonName="Download CV"
-              svgProps={{ viewBox: "0 0 24 24" }}
-              pathProps={{ d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" }}
-              polylineProps={{ points: "7 10 12 15 17 10" }}
-              lineProps={{ x1: "12", x2: "12", y1: "15", y2: "3" }}
-            />
+            <Button buttonName="Download CV" icon={Download} iconSize={20} />
           </motion.div>
         </motion.div>
 
-        {/* Image Section */}
+        {/* IMAGE */}
         <motion.div
-          className="hidden xl:flex justify-center ml-14"
-          initial={{ opacity: 0, x: 80 }}
+          className="flex justify-center md:justify-end"
+          initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
           <motion.img
             src={Natori}
-            alt="Luvi Portrait"
-            className="h-[420px] w-[300px] object-cover rounded-2xl shadow-lg"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200, damping: 15 }}
+            alt="Luvi portrait"
+            className="w-full max-w-xs md:max-w-sm lg:max-w-md rounded-2xl shadow-xl object-cover"
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 180, damping: 18 }}
           />
         </motion.div>
       </div>

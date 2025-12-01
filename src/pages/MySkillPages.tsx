@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { Sidebar } from "../components/Sidebar";
 import { CardSkills } from "../components/CardSkills";
+import { Brain, Clock3, LayoutTemplate } from "lucide-react";
+import { DataSkillsWeb } from "../utils/DataSkillsWeb";
+import { DataSkillsML } from "../utils/DataSkillsML";
 
 export const MySkillPages = () => {
   return (
@@ -22,46 +25,62 @@ export const MySkillPages = () => {
       <div className="flex flex-col flex-1">
         {/* Judul */}
         <motion.div
-          className="flex items-center gap-2 mb-6"
+          className="flex flex-col gap-2 mb-6"
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-8 text-yellow-600"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <h1 className="text-4xl font-serif">My Tech Stacks</h1>
-        </motion.div>
+          <div className="flex items-center gap-2">
+            <Clock3 className="text-yellow-600" size={35} />
+            <h1 className="text-4xl font-serif">My Tech Stacks</h1>
+          </div>
+          <div className="flex items-center gap-2 mt-4">
+            <LayoutTemplate className="text-yellow-600" size={25} />
+            <h2 className="text-2xl font-serif">Full Stack Engineering</h2>
+          </div>
 
-        {/* Grid Skill */}
-        <motion.div
-          className="grid grid-cols-5 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.15,
+          {/*Full-Stack Section*/}
+          <motion.div
+            className="grid grid-cols-5 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.15,
+                },
               },
-            },
-          }}
-        >
-          <CardSkills />
+            }}
+          >
+            <CardSkills data={DataSkillsWeb} />
+          </motion.div>
+
+          {/*AI/ML Section*/}
+          <div className="flex items-center gap-2 mt-4">
+            <Brain className="text-yellow-600 " size={25} />
+            <h2 className="text-2xl font-serif">AI/ML Engineering</h2>
+          </div>
+          <motion.div
+            className="grid grid-cols-5 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.15,
+                },
+              },
+            }}
+          >
+            <CardSkills data={DataSkillsML} />
+          </motion.div>
         </motion.div>
       </div>
     </section>

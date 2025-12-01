@@ -34,9 +34,7 @@ export const CardProject = (data: cardProjectTypes) => {
         </div>
       </div>
       <div className="px-6 py-4 mb-auto">
-        <h1 className="font-medium text-lg mb-2 hover:text-indigo-600">
-          {nameProject}
-        </h1>
+        <h1 className="font-medium text-lg mb-2">{nameProject}</h1>
         <p className="text-sm text-gray-600 font-serif min-h-[120px]">
           {deskProject}
         </p>

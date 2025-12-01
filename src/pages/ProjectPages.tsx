@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CardProject } from "../components/CardProject";
 import { Sidebar } from "../components/Sidebar";
-
+import { Folders } from "lucide-react";
 // Images
 import chatbot from "../../public/img/chatbot.png";
 import portfolio from "../../public/img/portfolio.png";
@@ -25,26 +25,13 @@ export const ProjectPages = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#CA8A04"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M20 17a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.9a2 2 0 0 1-1.69-.9l-.81-1.2a2 2 0 0 0-1.67-.9H8a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2Z" />
-            <path d="M2 8v11a2 2 0 0 0 2 2h14" />
-          </svg>
+          <Folders className="text-yellow-600" size={35} />
           <h1 className="text-4xl font-serif">My Projects</h1>
         </motion.div>
 
         {/* Deskripsi */}
         <motion.p
-          className="justify-center max-w-[600px] font-serif pb-12"
+          className="justify-center max-w-[600px] font-serif pb-12 text-2xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}

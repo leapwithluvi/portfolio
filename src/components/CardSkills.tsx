@@ -1,10 +1,20 @@
 import { motion } from "framer-motion";
-import { DataSkills } from "../utils/DataSkills";
 
-export const CardSkills = () => {
+export interface SkillItem {
+  name: string;
+  type: string;
+  logo: string;
+  url: string;
+}
+
+export interface CardSkillsProps {
+  data: SkillItem[];
+}
+
+export const CardSkills = ({ data }: CardSkillsProps) => {
   return (
     <>
-      {DataSkills.map((stack, idx) => (
+      {data.map((stack, idx) => (
         <motion.a
           key={idx}
           href={stack.url}
