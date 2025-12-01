@@ -3,7 +3,7 @@ import { Sidebar } from "../components/Sidebar";
 import { Button } from "../components/Button";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Download, Laptop } from "lucide-react";
-import Natori from "../../public/img/Natori.jpeg";
+import pp from "../../public/img/pp.jpeg";
 
 export const HeroPages = () => {
   return (
@@ -50,6 +50,11 @@ export const HeroPages = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <a
+              onClick={(e) => {
+                e.preventDefault();
+                const aboutSection = document.querySelector("#about");
+                aboutSection?.scrollIntoView({ behavior: "smooth" });
+              }}
               href="#about"
               className="flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium border border-gray-800 rounded-lg hover:bg-gray-900 hover:text-white transition duration-300"
             >
@@ -69,9 +74,9 @@ export const HeroPages = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <motion.img
-            src={Natori}
-            alt="Luvi portrait"
-            className="w-full max-w-xs md:max-w-sm lg:max-w-md rounded-2xl shadow-xl object-cover"
+            src={pp}
+            alt="Luvi Aprilyansyah Gabriel"
+            className="w-full h-[450px] max-w-xs md:max-w-sm lg:max-w-md rounded-2xl shadow-xl object-cover"
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 180, damping: 18 }}
           />
