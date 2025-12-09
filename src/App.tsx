@@ -4,6 +4,7 @@ import Lenis from "lenis";
 // PAGES
 import { HeroPages } from "./pages/HeroPages";
 import { AboutPages } from "./pages/AboutPages";
+import { ExperiencePages } from "./pages/ExperiencePages";
 import { MySkillPages } from "./pages/MySkillPages";
 import { ProjectPages } from "./pages/ProjectPages";
 import { ContactPages } from "./pages/ContactPages";
@@ -29,6 +30,7 @@ export const App = () => {
     <>
       <HeroPages />
       <AboutPages />
+      <ExperiencePages />
       <MySkillPages />
       <ProjectPages />
       <ContactPages />
