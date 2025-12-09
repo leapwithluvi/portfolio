@@ -47,8 +47,12 @@ export const ExperiencePages = () => {
                 transition={{ duration: 0.5, delay: 0.2 * index }}
                 viewport={{ once: true }}
               >
-                <h1 className="text-3xl font-bold text-gray-800">{item.num}</h1>
-                <p className="text-lg md:text-xl text-gray-600">{item.label}</p>
+                <h1 className="text-3xl font-serif font-bold text-gray-800">
+                  {item.num}
+                </h1>
+                <p className="text-xs font-serif md:text-xl text-gray-600">
+                  {item.label}
+                </p>
               </motion.div>
             ))}
           </motion.div>
