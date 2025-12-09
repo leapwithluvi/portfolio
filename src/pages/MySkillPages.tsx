@@ -4,12 +4,13 @@ import { CardSkills } from "../components/CardSkills";
 import { Brain, Clock3, LayoutTemplate } from "lucide-react";
 import { DataSkillsWeb } from "../utils/DataSkillsWeb";
 import { DataSkillsML } from "../utils/DataSkillsML";
+import grid from "../../public/img/grid.jpg";
 
 export const MySkillPages = () => {
   return (
     <section
       id="skills"
-      className="flex items-center h-auto px-6 md:px-12 py-20 overflow-hidden"
+      className="relative flex items-center h-auto px-6 md:px-12 py-20 overflow-hidden"
     >
       {/* Sidebar Kiri */}
       <motion.div
@@ -24,6 +25,11 @@ export const MySkillPages = () => {
       {/* Konten */}
       <div className="flex flex-col flex-1">
         {/* Judul */}
+        <img
+          src={grid}
+          alt="gambar"
+          className="absolute inset-0 w-full h-full object-cover opacity-20 -z-10"
+        />
         <motion.div
           className="flex flex-col gap-2 mb-6"
           initial={{ y: -30, opacity: 0 }}
@@ -39,7 +45,6 @@ export const MySkillPages = () => {
             <LayoutTemplate className="text-yellow-600" size={25} />
             <h2 className="text-2xl font-serif">Full Stack Engineering</h2>
           </div>
-
           {/*Full-Stack Section*/}
           <motion.div
             className="grid grid-cols-5 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"

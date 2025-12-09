@@ -56,7 +56,7 @@ export const HeroPages = () => {
                 aboutSection?.scrollIntoView({ behavior: "smooth" });
               }}
               href="#about"
-              className="flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium border border-gray-800 rounded-lg hover:bg-gray-900 hover:text-white transition duration-300"
+              className="flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium border border-gray-800 rounded-lg bg-gray-800 text-white hover:bg-white hover:text-black transition duration-300"
             >
               <ArrowUpRight size={20} />
               Explore
