@@ -23,5 +23,5 @@ export const myExperience: Experience = {
     },
   ],
   summary:
-    "Gained hands-on experience in full-stack development, strengthening skills in modern web and mobile technologies to deliver high-quality software solutions.",
+    "Gained hands-on experience in full-stack development, strengthening skills in modern web to deliver high-quality software solutions.",
 };
