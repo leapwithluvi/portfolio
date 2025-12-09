@@ -3,11 +3,11 @@ import { CardProject } from "../components/CardProject";
 import { Sidebar } from "../components/Sidebar";
 import { Folders } from "lucide-react";
 // Images
-import chatbot from "../../public/img/chatbot.png";
-import portfolio from "../../public/img/portfolio.png";
-import backend from "../../public/img/backend.png";
-import osis from "../../public/img/osis.png";
-import progress from "../../public/img/progress.png";
+import chatbot from "../assets/img/chatbot.png";
+import portfolio from "../assets/img/portfolio.png";
+import backend from "../assets/img/backend.png";
+import osis from "../assets/img/osis.png";
+import progress from "../assets/img/progress.png";
 
 export const ProjectPages = () => {
   return (

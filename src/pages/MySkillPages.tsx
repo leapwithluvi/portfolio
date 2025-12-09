@@ -4,7 +4,7 @@ import { CardSkills } from "../components/CardSkills";
 import { Brain, Clock3, LayoutTemplate } from "lucide-react";
 import { DataSkillsWeb } from "../utils/DataSkillsWeb";
 import { DataSkillsML } from "../utils/DataSkillsML";
-import grid from "../../public/img/grid.jpg";
+import grid from "../assets/img/grid.jpg";
 
 export const MySkillPages = () => {
   return (

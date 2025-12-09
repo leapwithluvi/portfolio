@@ -1,6 +1,6 @@
 import React from "react";
 import { type Experience } from "../types/Experience";
-import rivolta from "../../public/img/rivolta.png";
+import rivolta from "../assets/img/rivolta.png";
 
 interface ExperienceCardProps {
   data: Experience;

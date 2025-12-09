@@ -3,7 +3,7 @@ import { Sidebar } from "../components/Sidebar";
 import { Button } from "../components/Button";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Download, Laptop } from "lucide-react";
-import pp from "../../public/img/pp.jpeg";
+import pp from "../assets/img/pp.jpeg";
 
 export const HeroPages = () => {
   return (
