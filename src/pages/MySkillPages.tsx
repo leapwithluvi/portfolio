@@ -4,7 +4,6 @@ import { CardSkills } from "../components/CardSkills";
 import { Brain, Clock3, LayoutTemplate } from "lucide-react";
 import { DataSkillsWeb } from "../utils/DataSkillsWeb";
 import { DataSkillsML } from "../utils/DataSkillsML";
-import grid from "../../public/img/grid.jpg";
 
 export const MySkillPages = () => {
   return (
@@ -26,7 +25,7 @@ export const MySkillPages = () => {
       <div className="flex flex-col flex-1">
         {/* Judul */}
         <img
-          src={grid}
+          src="../../public/img/grid.jpg"
           alt="gambar"
           className="absolute inset-0 w-full h-full object-cover opacity-20 -z-10"
         />
