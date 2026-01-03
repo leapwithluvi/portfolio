@@ -63,33 +63,6 @@ export const ProjectPages = () => {
               srcImg: backend,
             },
             {
-              nameProject: "Simple School Library",
-              typeProject: "Website",
-              deskProject:
-                "Simple School Library is a modern web application that helps schools manage their digital library system efficiently. Students can log in using their NIS/NISN, explore the book catalog, and borrow or return books through an intuitive interface. The system includes admin tools for book inventory, borrowing records, and late return notifications. It aims to transform traditional library management into a smart and paperless experience.",
-              status: "On-Going",
-              linkRepo:
-                "https://github.com/leapwithluvi/perpustakaan-sederhana",
-              srcImg: progress,
-            },
-            {
-              nameProject: "Zona Game Tenggarong - PlayStation Store & Rental",
-              typeProject: "Website",
-              deskProject:
-                "Zona Game Tenggarong is a web-based platform for PlayStation enthusiasts to browse, rent, and purchase gaming products. The website features a digital catalog for PS3, PS4, and PS5 consoles, games, and accessories. It also provides online booking for console rental services and store promotions. Built with a focus on clean UI and responsive design, this platform helps local customers easily access gaming products from their devices.",
-              status: "On-Going",
-              linkRepo: "https://github.com/leapwithluvi/zonagame-tenggarong",
-              srcImg: progress,
-            },
-            // {
-            //   nameProject: "Trace Personal",
-            //   typeProject: "Website",
-            //   deskProject:
-            //     "Trace Personal is a workplace wellness platform designed to encourage healthy habits, team bonding, and employee engagement. It allows employees to log their daily wellness activities (hydration, sleep, workouts), participate in company-wide health challenges, and track progress on leaderboards. The platform promotes overall well-being while fostering friendly competition among employees.",
-            //   status: "On-Going",
-            //   linkRepo: "https://github.com/leapwithluvi/TracePersonal",
-            // },
-            {
               nameProject: "Portfolio",
               typeProject: "Website",
               deskProject:
