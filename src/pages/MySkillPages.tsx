@@ -4,7 +4,7 @@ import { CardSkills } from "../components/CardSkills";
 import { Brain, Clock3, LayoutTemplate } from "lucide-react";
 import { DataSkillsWeb } from "../utils/DataSkillsWeb";
 import { DataSkillsML } from "../utils/DataSkillsML";
-import grid from "../assets/img/grid.jpg";
+import { GridPattern } from "../components/ui/grid-pattern";
 
 export const MySkillPages = () => {
   return (
@@ -25,12 +25,14 @@ export const MySkillPages = () => {
       {/* Konten */}
       <div className="flex flex-col flex-1">
         {/* Judul */}
-        <img
-          src={grid}
-          alt="gambar"
-          className="absolute inset-0 w-full h-full object-cover opacity-20 -z-10"
+        <GridPattern
+          width={50}
+          height={50}
+          x={1}
+          y={1}
+          className="absolute inset-0 w-full h-full -z-10 [mask-image:radial-gradient(ellipse_at_center,white_40%,transparent_90%)]"
         />
-        <motion.div
+          <motion.div
           className="flex flex-col gap-2 mb-6"
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
