@@ -10,7 +10,7 @@ export const HeroPages = () => {
     <section className="flex items-center w-full bg-white px-6 md:px-12 lg:px-24 py-16 md:py-24 overflow-hidden">
       <Sidebar num="01" title="Hero" />
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div className="max-w-[1550px] w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* TEXT */}
         <motion.div
           className="flex flex-col gap-4"
