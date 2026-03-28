@@ -27,7 +27,11 @@ export const App = () => {
   }, []);
 
   return (
-    <>
+    <div className="relative min-h-screen bg-[oklch(0.98_0_0)]">
+      {/* Global Vertical Dividers */}
+      <div className="absolute left-[calc(50%-640px)] top-0 bottom-0 w-[1px] bg-gray-200 hidden xl:block" />
+      <div className="absolute right-[calc(50%-640px)] top-0 bottom-0 w-[1px] bg-gray-200 hidden xl:block" />
+
       <HeroPages />
       <AboutPages />
       <ExperiencePages />
@@ -35,6 +39,6 @@ export const App = () => {
       <ProjectPages />
       <ContactPages />
       <Footer />
-    </>
+    </div>
   );
 };

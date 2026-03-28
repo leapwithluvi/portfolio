@@ -80,7 +80,8 @@ export const ProjectPages = () => {
   const [activeTab, setActiveTab] = useState<Tab>("projects");
 
   return (
-    <section id="work" className="flex items-start h-auto px-6 md:px-12 py-16">
+    <section id="work" className="flex justify-center items-start h-auto px-6 md:px-12 py-16">
+      <div className="max-container flex items-start gap-8 md:gap-16">
       {/* SIDEBAR */}
       <Sidebar num="04" title="Work" />
 
@@ -173,6 +174,7 @@ export const ProjectPages = () => {
             </motion.div>
           )}
         </AnimatePresence>
+      </div>
       </div>
     </section>
   );

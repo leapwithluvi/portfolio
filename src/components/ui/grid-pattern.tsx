@@ -34,11 +34,11 @@ export function GridPattern({
       {...(props as any)}
     >
       <defs>
-        <pattern height={height} id={id} patternUnits="userSpaceOnUse" width={width} x={x} y={y}>
-          <path d={`M.5 ${height}V.5H${width}`} fill="none" strokeDasharray={strokeDasharray} />
-        </pattern>
-      </defs>
-      <rect fill={`url(#${id})`} height="100%" strokeWidth={0} width="100%" />
+      <pattern height={height} id={id} patternUnits="userSpaceOnUse" width={width} x={x} y={y}>
+        <path d={`M.5 ${height}V.5H${width}`} fill="none" strokeDasharray={strokeDasharray} />
+      </pattern>
+    </defs>
+    <rect fill={`url(#${id})`} height="100%" strokeWidth={0} width="100%" />
       {squares && (
         <svg aria-label="Grid squares" className="overflow-visible" role="img" x={x} y={y}>
           {squares.map(([x, y], index) => (

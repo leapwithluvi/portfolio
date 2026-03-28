@@ -3,7 +3,8 @@ import { Sidebar } from "../components/Sidebar";
 
 export const ContactPages = () => {
   return (
-    <section className="flex h-auto px-6 md:px-12 py-12">
+    <section className="flex justify-center h-auto px-6 md:px-12 py-12">
+      <div className="max-container flex h-full">
       {/* Sidebar kiri */}
       <Sidebar num="05" title="Contact" />
 
@@ -195,6 +196,7 @@ export const ContactPages = () => {
             </a>
           </motion.div>
         </motion.div>
+      </div>
       </div>
     </section>
   );

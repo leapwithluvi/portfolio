@@ -10,8 +10,16 @@ export const MySkillPages = () => {
   return (
     <section
       id="skills"
-      className="relative flex items-center h-auto px-6 md:px-12 py-20 overflow-hidden"
+      className="max-container relative z-0 flex justify-center items-center h-auto px-6 md:px-12 py-20 overflow-hidden"
     >
+      <GridPattern
+        width={45}
+        height={50}
+        x={1}
+        y={1}
+        className="absolute inset-0 w-full h-full -z-10 [mask-image:radial-gradient(ellipse_at_center,white_40%,transparent_90%)] stroke-gray-900/10"
+      />
+      <div className="max-container relative flex items-center h-full">
       {/* Sidebar Kiri */}
       <motion.div
         initial={{ x: -100, opacity: 0 }}
@@ -25,13 +33,6 @@ export const MySkillPages = () => {
       {/* Konten */}
       <div className="flex flex-col flex-1">
         {/* Judul */}
-        <GridPattern
-          width={50}
-          height={50}
-          x={1}
-          y={1}
-          className="absolute inset-0 w-full h-full -z-10 [mask-image:radial-gradient(ellipse_at_center,white_40%,transparent_90%)]"
-        />
           <motion.div
           className="flex flex-col gap-2 mb-6"
           initial={{ y: -30, opacity: 0 }}
@@ -89,6 +90,7 @@ export const MySkillPages = () => {
             <CardSkills data={DataSkillsML} />
           </motion.div>
         </motion.div>
+      </div>
       </div>
     </section>
   );

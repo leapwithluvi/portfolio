@@ -7,10 +7,11 @@ import pp from "../assets/img/pp.jpeg";
 
 export const HeroPages = () => {
   return (
-    <section className="flex items-center w-full bg-white px-6 md:px-12 lg:px-24 py-16 md:py-24 overflow-hidden">
-      <Sidebar num="01" title="Hero" />
+    <section className="flex justify-center items-center w-full px-6 md:px-12 lg:px-24 py-16 md:py-24 overflow-hidden">
+      <div className="max-container flex items-center gap-8 md:gap-16">
+        <Sidebar num="01" title="Hero" />
 
-      <div className="max-w-[1550px] w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* TEXT */}
         <motion.div
           className="flex flex-col gap-4"
@@ -81,6 +82,7 @@ export const HeroPages = () => {
             transition={{ type: "spring", stiffness: 180, damping: 18 }}
           />
         </motion.div>
+      </div>
       </div>
     </section>
   );

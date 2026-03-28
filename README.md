@@ -145,6 +145,12 @@ npm run lint
 
 ---
 
+## 📜 Credits & Inspiration
+
+This portfolio was inspired by the design of **[Delfan Laden](https://www.delfanladen.my.id/)**. Huge thanks for the inspiration!
+
+---
+
 ## 📝 License
 
 This project is licensed under the terms of the [MIT License](./LICENSE).

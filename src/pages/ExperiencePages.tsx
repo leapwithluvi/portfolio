@@ -8,8 +8,9 @@ export const ExperiencePages = () => {
   return (
     <section
       id="experince"
-      className="fkex flex items-center h-auto px-6 md:px-12 py-12"
+      className="flex justify-center items-center h-auto px-6 md:px-12 py-12"
     >
+      <div className="max-container flex items-center h-full">
       {/*sidebar kiri*/}
       <motion.div
         initial={{ x: -100, opacity: 0 }}
@@ -66,6 +67,7 @@ export const ExperiencePages = () => {
             <ExperienceCard data={myExperience} />
           </motion.div>
         </motion.div>
+      </div>
       </div>
     </section>
   );

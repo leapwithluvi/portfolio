@@ -5,9 +5,10 @@ import { UserRound } from "lucide-react";
 export const AboutPages = () => {
   return (
     <section
-      className="flex items-center h-auto px-6 md:px-12 py-12 overflow-hidden"
+      className="flex justify-center items-center h-auto px-6 md:px-12 py-12 overflow-hidden"
       id="about"
     >
+      <div className="max-container flex items-center h-full">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -57,7 +58,7 @@ export const AboutPages = () => {
         ].map((text, index) => (
           <motion.p
             key={index}
-            className="md:text-xl text-xl font-serif text-gray-600"
+            className="md:text-xl text-xl font-serif text-gray-600 max-w-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
@@ -67,6 +68,7 @@ export const AboutPages = () => {
           </motion.p>
         ))}
       </motion.div>
+      </div>
     </section>
   );
 };
