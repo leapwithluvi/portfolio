@@ -9,6 +9,7 @@ import { MySkillPages } from "./pages/MySkillPages";
 import { ProjectPages } from "./pages/ProjectPages";
 import { ContactPages } from "./pages/ContactPages";
 import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
 
 export const App = () => {
   useEffect(() => {
@@ -27,10 +28,12 @@ export const App = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[oklch(0.98_0_0)]">
+    <div className="relative min-h-screen bg-background text-foreground transition-colors duration-300">
       {/* Global Vertical Dividers */}
-      <div className="absolute left-[calc(50%-640px)] top-0 bottom-0 w-[1px] bg-gray-200 hidden xl:block" />
-      <div className="absolute right-[calc(50%-640px)] top-0 bottom-0 w-[1px] bg-gray-200 hidden xl:block" />
+      <div className="absolute left-[calc(50%-640px)] top-0 bottom-0 w-[1px] bg-border hidden xl:block" />
+      <div className="absolute right-[calc(50%-640px)] top-0 bottom-0 w-[1px] bg-border hidden xl:block" />
+
+      <Navbar />
 
       <HeroPages />
       <AboutPages />

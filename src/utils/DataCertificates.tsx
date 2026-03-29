@@ -1,6 +1,7 @@
 export interface Certificate {
   title: string;
   issuer: string;
+  issuerLogo: string;
   date: string;
   category: string;
   credentialUrl: string;
@@ -13,6 +14,7 @@ export const DataCertificates: Certificate[] = [
   {
     title: "Kelas Python Lengkap 2025: Pemula sampai Mahir",
     issuer: "Kelas.work by Kelas.com",
+    issuerLogo: "https://www.google.com/s2/favicons?sz=128&domain=kelas.work",
     date: "Diterbitkan Sep 2025",
     category: "Fundamental",
     credentialUrl: "https://drive.google.com/file/d/1-BM7R6U0AsTfPOYHp1Hx9S4fo59nxBrA/view?pli=1",
@@ -21,14 +23,16 @@ export const DataCertificates: Certificate[] = [
   {
     title: "Belajar Dasar AI",
     issuer: "Dicoding Indonesia",
+    issuerLogo: "https://www.google.com/s2/favicons?sz=128&domain=dicoding.com",
     date: "Diterbitkan Sep 2025",
-    category: "AI/ML",
+    category: "Fundamental",
     credentialUrl: "https://www.dicoding.com/certificates/RVZKGL1EQXD5",
     skills: ["Artificial Intelligence (AI)", "Machine Learning", "Deep Learning"],
   },
   {
     title: "Introduction to Machine Learning on AWS",
     issuer: "Amazon Web Services (AWS)",
+    issuerLogo: "https://www.google.com/s2/favicons?sz=128&domain=aws.amazon.com",
     date: "Diterbitkan Des 2025",
     category: "AI/ML",
     credentialUrl: "https://www.coursera.org/account/accomplishments/verify/MN325211TLF1",
@@ -37,6 +41,7 @@ export const DataCertificates: Certificate[] = [
   {
     title: "Supervised Machine Learning: Regression and Classification ",
     issuer: "DeepLearning.AI",
+    issuerLogo: "https://www.google.com/s2/favicons?sz=128&domain=deeplearning.ai",
     date: "Diterbitkan Des 2025",
     category: "AI/ML",
     credentialUrl: "https://www.coursera.org/account/accomplishments/verify/MLLEFGCMECWG",

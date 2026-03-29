@@ -7,7 +7,7 @@ import pp from "../assets/img/pp.jpeg";
 
 export const HeroPages = () => {
   return (
-    <section className="flex justify-center items-center w-full px-6 md:px-12 lg:px-24 py-16 md:py-24 overflow-hidden">
+    <section id="home" className="flex justify-center items-center w-full px-6 md:px-12 lg:px-24 py-16 md:py-24 overflow-hidden">
       <div className="max-container flex items-center gap-8 md:gap-16">
         <Sidebar num="01" title="Hero" />
 
@@ -25,7 +25,7 @@ export const HeroPages = () => {
           </p>
 
           <motion.h1
-            className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-gray-900"
+            className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -34,7 +34,7 @@ export const HeroPages = () => {
           </motion.h1>
 
           <motion.p
-            className="text-base md:text-lg text-gray-700 max-w-md"
+            className="text-base md:text-lg text-muted-foreground max-w-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}

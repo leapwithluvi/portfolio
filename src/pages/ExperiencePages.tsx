@@ -7,7 +7,7 @@ import { BriefcaseBusiness } from "lucide-react";
 export const ExperiencePages = () => {
   return (
     <section
-      id="experince"
+      id="experience"
       className="flex justify-center items-center h-auto px-6 md:px-12 py-12"
     >
       <div className="max-container flex items-center h-full">
@@ -32,7 +32,7 @@ export const ExperiencePages = () => {
         >
           <div className="flex flex-row items-center gap-4">
             <BriefcaseBusiness className="text-yellow-600" size={35} />
-            <h1 className="md:text-5xl text-4xl font-serif">Experience</h1>
+            <h2 className="md:text-5xl text-4xl font-serif">Experience</h2>
           </div>
 
           <motion.div className="ml-4 flex flex-row gap-12 mt-8">
@@ -48,10 +48,10 @@ export const ExperiencePages = () => {
                 transition={{ duration: 0.5, delay: 0.2 * index }}
                 viewport={{ once: true }}
               >
-                <h1 className="text-3xl font-serif font-bold text-gray-800">
+                <span className="text-3xl font-serif font-bold text-foreground">
                   {item.num}
-                </h1>
-                <p className="text-xs font-serif md:text-xl text-gray-600">
+                </span>
+                <p className="text-xs font-serif md:text-xl text-muted-foreground">
                   {item.label}
                 </p>
               </motion.div>

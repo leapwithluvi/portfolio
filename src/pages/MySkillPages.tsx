@@ -17,7 +17,7 @@ export const MySkillPages = () => {
         height={50}
         x={1}
         y={1}
-        className="absolute inset-0 w-full h-full -z-10 [mask-image:radial-gradient(ellipse_at_center,white_40%,transparent_90%)] stroke-gray-900/10"
+        className="absolute inset-0 w-full h-full -z-10 [mask-image:radial-gradient(ellipse_at_center,white_40%,transparent_90%)] stroke-gray-900/10 dark:stroke-white/10"
       />
       <div className="max-container relative flex items-center h-full">
       {/* Sidebar Kiri */}
@@ -42,7 +42,7 @@ export const MySkillPages = () => {
         >
           <div className="flex items-center gap-2">
             <Clock3 className="text-yellow-600" size={35} />
-            <h1 className="text-4xl font-serif">My Tech Stacks</h1>
+            <h2 className="text-4xl font-serif">My Tech Stacks</h2>
           </div>
           <div className="flex items-center gap-2 mt-4">
             <LayoutTemplate className="text-yellow-600" size={25} />

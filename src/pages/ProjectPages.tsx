@@ -5,50 +5,7 @@ import { CardCertificate } from "../components/CardCertificate";
 import { Sidebar } from "../components/Sidebar";
 import { Folders, Award } from "lucide-react";
 import { DataCertificates } from "../utils/DataCertificates";
-// Images
-import chatbot from "../assets/img/chatbot.png";
-import portfolio from "../assets/img/portfolio.png";
-import backend from "../assets/img/backend.png";
-import osis from "../assets/img/osis.png";
-
-const projects = [
-  {
-    nameProject: "AI Chatbot - Interactive Website with Ollama Gemma 2",
-    typeProject: "Website",
-    deskProject:
-      "AI Chatbot is an interactive web platform that enables users to communicate directly with a local large language model (LLM). Built using Ollama and Google's Gemma 2 model, it provides a ChatGPT-like experience while ensuring complete privacy and offline functionality.",
-    status: "On-Going",
-    linkRepo: "https://github.com/leapwithluvi/ai-chatbot",
-    srcImg: chatbot,
-  },
-  {
-    nameProject: "Backend Auth API",
-    typeProject: "Backend",
-    deskProject:
-      "Backend Auth API is a secure and modular authentication service built for scalability and integration. It supports essential features like user registration, login, and password reset with JWT-based authentication following RESTful principles.",
-    status: "On-Going",
-    linkRepo: "https://github.com/leapwithluvi/backend-auth-api",
-    srcImg: backend,
-  },
-  {
-    nameProject: "Portfolio",
-    typeProject: "Website",
-    deskProject:
-      "Portfolio is a personal website designed to showcase my projects, skills, and experience in web development. Built with Vite, React, Tailwind CSS, and Framer Motion, it features smooth animations, responsive design, and a clean modern interface.",
-    status: "Complete",
-    linkRepo: "https://github.com/leapwithluvi/portfolio",
-    srcImg: portfolio,
-  },
-  {
-    nameProject: "OSIS President Voting System",
-    typeProject: "Website",
-    deskProject:
-      "The OSIS President Voting System is a secure digital election platform developed to streamline the voting process for student council elections. It enables students to cast their votes online safely and transparently, with real-time vote counting.",
-    status: "Complete",
-    linkRepo: "https://github.com/leapwithluvi/ketos-voting-system",
-    srcImg: osis,
-  },
-];
+import { DataProjects } from "../utils/DataProjects";
 
 type Tab = "projects" | "certificates";
 
@@ -96,7 +53,7 @@ export const ProjectPages = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <Folders className="text-yellow-600" size={35} />
-          <h1 className="text-4xl font-serif">My Work</h1>
+          <h2 className="text-4xl font-serif">My Work</h2>
         </motion.div>
 
         {/* Tab Navigation */}
@@ -116,8 +73,8 @@ export const ProjectPages = () => {
                 onClick={() => setActiveTab(tab.id)}
                 className={`relative flex items-center gap-2 px-5 py-3 text-sm font-medium transition-colors duration-200 focus:outline-none ${
                   isActive
-                    ? "text-gray-900"
-                    : "text-gray-400 hover:text-gray-700"
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 <Icon size={16} />
@@ -145,13 +102,13 @@ export const ProjectPages = () => {
               exit="exit"
               className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-stretch"
             >
-              {projects.map((card, index) => (
+              {DataProjects.map((card, index) => (
                 <motion.div
                   key={index}
                   variants={itemVariants}
                   className="flex h-full"
                 >
-                  <CardProject {...card} imgAlt="Image Project" />
+                  <CardProject {...card} imgAlt={card.nameProject} />
                 </motion.div>
               ))}
             </motion.div>

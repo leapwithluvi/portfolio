@@ -37,7 +37,7 @@ export const AboutPages = () => {
         >
           {/* Ikon User */}
           <UserRound className="text-yellow-600" size={35} />
-          <h1 className="md:text-5xl text-4xl font-serif">About Me</h1>
+          <h2 className="md:text-5xl text-4xl font-serif">About Me</h2>
         </motion.div>
 
         {/* Subjudul */}
@@ -58,7 +58,7 @@ export const AboutPages = () => {
         ].map((text, index) => (
           <motion.p
             key={index}
-            className="md:text-xl text-xl font-serif text-gray-600 max-w-3xl"
+            className="md:text-xl text-xl font-serif text-muted-foreground max-w-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}

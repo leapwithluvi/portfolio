@@ -36,8 +36,8 @@ export const CardSkills = ({ data }: CardSkillsProps) => {
             flex flex-col items-center justify-center
             sm:flex-row sm:justify-start sm:space-x-4
             p-3 sm:p-5
-            bg-white rounded-lg shadow-md
-            transition-transform duration-300 cursor-pointer
+            bg-card rounded-lg shadow-md
+            transition-all duration-300 cursor-pointer
           "
         >
           {/* Logo */}
@@ -45,16 +45,20 @@ export const CardSkills = ({ data }: CardSkillsProps) => {
             <img
               src={stack.logo}
               alt={stack.name}
-              className="h-10 w-10 sm:h-10 sm:w-10 object-contain"
+              className={`h-10 w-10 sm:h-10 sm:w-10 object-contain ${
+                ["GitHub", "Vercel", "Express.js"].includes(stack.name)
+                  ? "dark:invert dark:brightness-200"
+                  : ""
+              }`}
             />
           </div>
 
           {/* Info */}
           <div className="hidden sm:flex flex-col">
-            <h3 className="text-base font-semibold text-gray-900">
+            <h3 className="text-base font-semibold text-foreground">
               {stack.name}
             </h3>
-            <p className="text-sm text-gray-500">{stack.type}</p>
+            <p className="text-sm text-muted-foreground">{stack.type}</p>
           </div>
         </motion.a>
       ))}
