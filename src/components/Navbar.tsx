@@ -48,42 +48,35 @@ export const Navbar = () => {
     }
   };
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[999] pointer-events-auto transition-all duration-300 ${
         isScrolled
           ? "py-3 bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
           : "py-5 bg-transparent"
       }`}
     >
-      <div className="max-container flex items-center justify-between">
+      <div className="max-container flex items-center justify-between pointer-events-auto">
         {/* Logo */}
         <motion.a
           href="#home"
-          onClick={(e) => scrollToSection(e, "#home")}
-          className="text-xl font-serif font-bold tracking-tighter text-foreground"
+          className="text-xl font-serif font-bold tracking-tighter text-foreground relative z-50"
           whileHover={{ scale: 1.05 }}
         >
           leapwithluvi<span className="text-yellow-600">.</span>
         </motion.a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 relative z-50">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 cursor-pointer"
             >
               {link.name}
             </a>
@@ -92,7 +85,8 @@ export const Navbar = () => {
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-muted transition-colors duration-200 text-foreground"
+            type="button"
+            className="p-2 rounded-full hover:bg-muted transition-colors duration-200 text-foreground cursor-pointer"
             aria-label="Toggle theme"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
@@ -100,16 +94,20 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Icons */}
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-4 md:hidden relative z-50">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-muted transition-colors duration-200 text-foreground"
+            type="button"
+            className="p-2 rounded-full hover:bg-muted transition-colors duration-200 text-foreground cursor-pointer"
+            aria-label="Toggle theme"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-foreground"
+            type="button"
+            className="p-2 text-foreground cursor-pointer"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -130,7 +128,7 @@ export const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={(e) => scrollToSection(e, link.href)}
+                  onClick={handleNavClick}
                   className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   {link.name}

@@ -21,7 +21,7 @@ export const HeroPages = () => {
         >
           <p className="flex items-center gap-2 text-lg font-medium text-yellow-600">
             <Laptop size={28} className="text-yellow-600" />
-            Aspiring Fullstack Developer & AI/ML Engineer
+            Fullstack Developer & AI/ML Enthusiast
           </p>
 
           <motion.h1

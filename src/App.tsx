@@ -14,9 +14,9 @@ import { Navbar } from "./components/Navbar";
 export const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 0,
+      duration: 1.2,
       smoothWheel: true,
-      easing: (t) => t * (2 - t),
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
     const raf = (time: number) => {

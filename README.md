@@ -1,6 +1,6 @@
 # 🌟 Luvi Aprilyansyah Gabriel — Personal Portfolio
 
-A modern and responsive personal portfolio website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion**. This website showcases my skills, projects, experience, and contact information as an Aspiring Fullstack Developer & AI/ML Engineer.
+A modern and responsive personal portfolio website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion**. This website showcases my skills, projects, experience, and contact information as a Fullstack Developer & AI/ML Enthusiast.
 
 ## 🖥️ Live Preview
 
@@ -52,24 +52,35 @@ A modern and responsive personal portfolio website built with **React**, **TypeS
 portfolio/
 ├── public/
 ├── src/
-│   ├── assets/          # Images and static files
-│   ├── components/      # Reusable UI components
+│   ├── assets/               # Images and static files
+│   ├── components/           # Reusable UI components
+│   │   ├── ui/
+│   │   │   └── grid-pattern.tsx
 │   │   ├── Button.tsx
+│   │   ├── CardCertificate.tsx
 │   │   ├── CardProject.tsx
 │   │   ├── CardSkills.tsx
 │   │   ├── ExperienceCard.tsx
 │   │   ├── Footer.tsx
+│   │   ├── Navbar.tsx
 │   │   └── Sidebar.tsx
-│   ├── pages/           # Page sections
+│   ├── lib/                  # Utility helpers (e.g. cn)
+│   ├── pages/                # Page sections
 │   │   ├── HeroPages.tsx
 │   │   ├── AboutPages.tsx
 │   │   ├── ExperiencePages.tsx
 │   │   ├── MySkillPages.tsx
 │   │   ├── ProjectPages.tsx
 │   │   └── ContactPages.tsx
-│   ├── utils/           # Data constants (skills, experience)
-│   ├── types/           # TypeScript type definitions
+│   ├── utils/                # Data constants
+│   │   ├── DataCertificates.tsx
+│   │   ├── DataExperience.tsx
+│   │   ├── DataProjects.tsx
+│   │   ├── DataSkillsML.tsx
+│   │   └── DataSkillsWeb.tsx
+│   ├── types/                # TypeScript type definitions
 │   ├── App.tsx
+│   ├── index.css
 │   └── main.tsx
 ├── index.html
 ├── package.json
@@ -121,19 +132,6 @@ npm run lint
 
 ---
 
-## 🗂️ Featured Projects
-
-| Project | Type | Status |
-|---------|------|--------|
-| AI Chatbot (Ollama + Gemma 2) | Website | 🔄 On-Going |
-| Backend Auth API | Backend | 🔄 On-Going |
-| Simple School Library | Website | 🔄 On-Going |
-| Zona Game Tenggarong | Website | 🔄 On-Going |
-| Portfolio | Website | ✅ Complete |
-| OSIS President Voting System | Website | ✅ Complete |
-
----
-
 ## 📬 Contact
 
 | Platform | Link |
@@ -147,7 +145,7 @@ npm run lint
 
 ## 📜 Credits & Inspiration
 
-This portfolio was inspired by the design of **[Delfan Laden](https://www.delfanladen.my.id/)**. Huge thanks for the inspiration!
+This portfolio was inspired by the design of **[Delfan Rynaldo Laden](https://www.delfanladen.my.id/)**. Huge thanks for the inspiration!
 
 ---
 
@@ -157,4 +155,4 @@ This project is licensed under the terms of the [MIT License](./LICENSE).
 
 ---
 
-> Built with ❤️ by **Luvi Aprilyansyah Gabriel** — Aspiring Fullstack Developer & AI/ML Engineer
+> Built by **Luvi Aprilyansyah Gabriel** — Fullstack Developer & AI/ML Enthusiast

@@ -33,7 +33,7 @@ export const DataProjects: Project[] = [
     status: "Complete",
     linkRepo: "https://github.com/leapwithluvi/portfolio",
     srcImg: portfolio,
-    stacks: ["Vite", "React", "Tailwind CSS", "Framer Motion", "Shadcn UI"],
+    stacks: ["Vite", "React", "Tailwind CSS", "Framer Motion", "Shadcn UI", "TypeScript"],
   },
   {
     nameProject: "OSIS President Voting System",

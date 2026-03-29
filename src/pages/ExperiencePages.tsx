@@ -37,8 +37,9 @@ export const ExperiencePages = () => {
 
           <motion.div className="ml-4 flex flex-row gap-12 mt-8">
             {[
-              { num: "6", label: "Months of Experience" },
-              { num: "2", label: "Projects Published" },
+              { num: "6", label: "Months Internship Experience" },
+              { num: "2+", label: "Years of Learning to Code" },
+              { num: "3", label: "Projects Published" },
             ].map((item, index) => (
               <motion.div
                 key={index}
