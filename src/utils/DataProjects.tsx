@@ -1,5 +1,5 @@
 import backend from "../assets/img/backend.png";
-import chatbot from "../assets/img/chatbot.png";
+import nexusai from "../assets/img/nexusai.png";
 import osis from "../assets/img/osis.png";
 import portfolio from "../assets/img/portfolio.png";
 import perpustakaan from "../assets/img/perpustakaan.png";
@@ -23,7 +23,7 @@ export const DataProjects: Project[] = [
     status: "Complete",
     linkRepo: "https://github.com/leapwithluvi/library-management-system",
     srcImg: perpustakaan,
-    stacks: ["Vite", "React", "Tailwind CSS", "Framer Motion", "Shadcn UI", "Express", "PostgreSQL", "Supabase", "Prisma", "TypeScript"],
+    stacks: ["Vite", "React", "Tailwind CSS", "Framer Motion", "Shadcn UI", "Express.js", "PostgreSQL", "Supabase", "Prisma", "TypeScript"],
   },
   {
     nameProject: "Portfolio",
@@ -46,23 +46,23 @@ export const DataProjects: Project[] = [
         stacks: ["React", "Express.js", "MongoDB", "Prisma", "Tailwind CSS"],
       },
       {
-          nameProject: "AI Chatbot - Interactive Website with Ollama Gemma 2",
+          nameProject: "Nexus AI - Conversational AI Platform",
           typeProject: "Website",
           deskProject:
-            "AI Chatbot is an interactive web platform that enables users to communicate directly with a local large language model (LLM). Built using Ollama and Google's Gemma 2 model, it provides a ChatGPT-like experience while ensuring complete privacy and offline functionality.",
+            "Nexus AI is a lightweight yet powerful assistant designed for fast, intelligent, and private conversations. Built with a modern aesthetic, it provides a seamless chat experience while maintaining a professional and generic brand identity.",
           status: "On-Going",
           linkRepo: "https://github.com/leapwithluvi/ai-chatbot",
-          srcImg: chatbot,
-          stacks: ["React", "Ollama", "Gemma 2", "Tailwind CSS"],
+          srcImg: nexusai,
+          stacks: ["Vite", "React", "Gemini API", "Tailwind CSS", "Shadcn UI", "Framer Motion", "Express.js", "PostgreSQL", "Prisma","TypeScript"],
         },
         {
-          nameProject: "Backend Auth API",
-          typeProject: "Backend",
+          nameProject: "Express TypeScript Starter - Professional Backend Boilerplate",
+          typeProject: "Backend / Boilerplate",
           deskProject:
-            "Backend Auth API is a secure and modular authentication service built for scalability and integration. It supports essential features like user registration, login, and password reset with JWT-based authentication following RESTful principles.",
+            "A robust and secure boilerplate for building scalable RESTful APIs. It features a layered architecture, Express 5, TypeScript, Prisma, Zod validation, and industry-standard security practices like Helmet and Rate Limiting.",
           status: "On-Going",
-          linkRepo: "https://github.com/leapwithluvi/backend-auth-api",
+          linkRepo: "https://github.com/leapwithluvi/express-typescript-starter",
           srcImg: backend,
-          stacks: ["Express.js", "Node.js", "PostgreSQL", "Prisma", "JWT"],
+          stacks: ["Express.js", "Node.js", "PostgreSQL", "Prisma", "JWT", "Zod", "ESLint", "Prettier", "TypeScript"],
         },
     ];
