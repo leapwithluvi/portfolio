@@ -1,134 +1,114 @@
 # 🌟 Luvi Aprilyansyah Gabriel — Personal Portfolio
 
-A modern and responsive personal portfolio website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion**. This website showcases my skills, projects, experience, and contact information as a Fullstack Developer & AI/ML Enthusiast.
+<!-- GitHub badges -->
+[![Stars](https://img.shields.io/github/stars/leapwithluvi/portfolio?style=social)](https://github.com/leapwithluvi/portfolio/stargazers)
+[![Fork](https://img.shields.io/github/forks/leapwithluvi/portfolio?style=social)](https://github.com/leapwithluvi/portfolio/forks)
+[![GitHub commits](https://img.shields.io/github/commit-activity/t/leapwithluvi/portfolio?style=social&logo=github)](https://github.com/leapwithluvi/portfolio/commits)
+[![Pull requests](https://img.shields.io/github/issues-pr/leapwithluvi/portfolio?style=social&logo=github)](https://github.com/leapwithluvi/portfolio/pulls)
+
+![Portfolio Banner](./src/assets/img/portfolio.png)
+
+[![leapwithluvi](https://custom-icon-badges.demolab.com/badge/made%20by%20-leapwithluvi-556bf2?logo=github&logoColor=white&labelColor=101827)](https://github.com/leapwithluvi)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?color=dddddd&labelColor=000000)](https://github.com/leapwithluvi/portfolio/blob/main/LICENSE)
+[![Top Language](https://img.shields.io/github/languages/top/leapwithluvi/portfolio?logo=github&logoColor=%23007ACC&label=TypeScript)](https://www.typescriptlang.org/)
+![PRs](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=shields)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 ## 🖥️ Live Preview
 
-🌐 **[luvi.my.id](https://luvi.my.id)** — Deployed via Vercel
+👉 **[Visit My Portfolio → luvi.my.id](https://luvi.my.id)**
 
----
+<details><summary>Screenshot</summary>
 
-## ✨ Features
+![Home](./src/assets/img/preview/home.png)
+![About](./src/assets/img/preview/about.png)
+![Experience](./src/assets/img/preview/experience.png)
+![Skills](./src/assets/img/preview/skills.png)
+![Projects](./src/assets/img/preview/projects.png)
+![My Certificate](./src/assets/img/preview/my-certificate.png)
+![Contact](./src/assets/img/preview/contact.png)
 
-- 🎨 Clean, modern, and responsive design
-- 🌀 Smooth scroll powered by [Lenis](https://github.com/darkroomengineering/lenis)
-- 💫 Animated sections using [Framer Motion](https://www.framer.com/motion/)
-- 📱 Mobile-friendly layout
-- 📂 Project showcase with GitHub links
-- 🛠️ Tech stack display (Fullstack & AI/ML)
-- 📬 Contact section with social media links
+</details>
 
----
+## 📖 Table of Contents
 
-## 📄 Sections
+<details><summary>Table of Contents</summary>
 
-| # | Section | Description |
-|---|---------|-------------|
-| 01 | **Hero** | Introduction, photo, and quick actions (Explore & Download CV) |
-| 02 | **About** | Personal background and developer journey |
-| 03 | **Experience** | Work experience, months active, and published projects |
-| 03 | **Tech Stack** | Skills split into Fullstack Engineering and AI/ML Engineering |
-| 04 | **Projects** | Featured projects with descriptions, status, and GitHub links |
-| 05 | **Contact** | Social media icons linking to Gmail, LinkedIn, GitHub, and Instagram |
+- [Description](#-description)
+- [Key Features](#-key-features)
+- [Folder Structure](#-folder-structure)
+- [Technologies Used](#-technologies-used)
+- [Contact](#-contact)
+- [License](#-license)
 
----
+</details>
 
-## 🛠️ Tech Stack
+## 📝 Description
 
-### Frontend
-- [React](https://react.dev/) `v19`
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/) `v7`
-- [Tailwind CSS](https://tailwindcss.com/) `v3`
-- [Framer Motion](https://www.framer.com/motion/)
-- [Lenis](https://github.com/darkroomengineering/lenis) (smooth scroll)
-- [Lucide React](https://lucide.dev/) (icons)
+**Luvi Aprilyansyah Gabriel — Personal Portfolio** is a premium, modern, and responsive personal portfolio website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion**. It serves as a comprehensive showcase of my skills, projects, experience, and contact information as a **Fullstack Developer & AI/ML Enthusiast**.
 
----
+Designed with a focus on aesthetics and user experience, this portfolio features smooth animations, a clean interface, and a professional layout to highlight my technical journey and capabilities.
 
-## 📁 Project Structure
+## ✨ Key Features
 
-```
-portfolio/
-├── public/
-├── src/
-│   ├── assets/               # Images and static files
-│   ├── components/           # Reusable UI components
-│   │   ├── ui/
-│   │   │   └── grid-pattern.tsx
-│   │   ├── Button.tsx
-│   │   ├── CardCertificate.tsx
-│   │   ├── CardProject.tsx
-│   │   ├── CardSkills.tsx
-│   │   ├── ExperienceCard.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Navbar.tsx
-│   │   └── Sidebar.tsx
-│   ├── lib/                  # Utility helpers (e.g. cn)
-│   ├── pages/                # Page sections
-│   │   ├── HeroPages.tsx
-│   │   ├── AboutPages.tsx
-│   │   ├── ExperiencePages.tsx
-│   │   ├── MySkillPages.tsx
-│   │   ├── ProjectPages.tsx
-│   │   └── ContactPages.tsx
-│   ├── utils/                # Data constants
-│   │   ├── DataCertificates.tsx
-│   │   ├── DataExperience.tsx
-│   │   ├── DataProjects.tsx
-│   │   ├── DataSkillsML.tsx
-│   │   └── DataSkillsWeb.tsx
-│   ├── types/                # TypeScript type definitions
-│   ├── App.tsx
-│   ├── index.css
-│   └── main.tsx
-├── index.html
-├── package.json
-├── tailwind.config.js
-└── vite.config.ts
-```
+- **🎨 Premium Design**: Modern, clean, and professional aesthetic with attention to detail.
+- **🌀 Smooth Scrolling**: Fluid navigation powered by **Lenis** smooth scroll.
+- **💫 Dynamic Animations**: Engaging section transitions and micro-interactions using **Framer Motion**.
+- **📱 Fully Responsive**: Seamlessly optimized for all devices, from mobile to desktop.
+- **📂 Project Showcase**: Interactive display of featured projects with direct GitHub links.
+- **🛠️ Tech Stack Visualization**: Clear representation of expertise in both Fullstack and AI/ML Engineering.
+- **📬 Direct Contact**: Integrated contact section with social media links for easy networking.
 
----
+## 📂 Folder Structure
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) >= 18
-- npm or yarn
-
-### Installation
+<details><summary><b>Project Layout</b></summary>
 
 ```bash
-# Clone the repository
-git clone https://github.com/leapwithluvi/portfolio.git
-
-# Navigate to the project directory
-cd portfolio
-
-# Install dependencies
-npm install
+src/
+├── assets/               # Images and static assets (Project screenshots, etc.)
+├── components/           # Reusable UI components
+│   ├── ui/               # Base UI elements (grid patterns, etc.)
+│   ├── CardProject.tsx   # Project showcase cards
+│   ├── CardSkills.tsx    # Skills visualization components
+│   └── ...               # Navbar, Footer, and other layout components
+├── pages/                # Main section pages
+│   ├── HeroPages.tsx     # Landing hero section
+│   ├── AboutPages.tsx    # Personal bio and developer journey
+│   ├── ProjectPages.tsx  # Interactive project gallery
+│   └── ...               # Experience, Skills, and Contact sections
+├── utils/                # Data constants and static content
+│   ├── DataProjects.tsx  # Projects database
+│   ├── DataSkillsWeb.tsx # Web development skills data
+│   └── ...
+├── types/                # Shared TypeScript interfaces
+├── lib/                  # Utility helpers and configurations
+└── App.tsx               # Main application entry and layout
 ```
 
-### Running Locally
+</details>
 
-```bash
-npm run dev
-```
+## ✨ Technologies Used
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+<details><summary>This project is built using a modern high-performance stack:</summary>
 
-### Build for Production
+- [React](https://react.dev/): A JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript for error-free development.
+- [Vite](https://vitejs.dev/): Next-generation frontend tooling for fast builds.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
+- [Framer Motion](https://www.framer.com/motion/): A production-ready motion library for React.
+- [Lenis Scroll](https://github.com/darkroomengineering/lenis): Implementation of high-performance smooth scrolling.
+- [Lucide React](https://lucide.dev/): Beautifully simple, pixel-perfect icons.
+- [Shadcn UI](https://ui.shadcn.com/): Reusable components built using Radix UI and Tailwind CSS.
 
-```bash
-npm run build
-```
+</details><br/>
 
-### Lint
+[![Technologies Used](https://skillicons.dev/icons?i=ts,nodejs,react,vite,tailwindcss,shadcnui)](https://skillicons.dev)
 
-```bash
-npm run lint
-```
+## 🚀 Featured Projects
+
+- 🔗 [Library Management System](https://github.com/leapwithluvi/library-management-system)
+- 🔗 [Conversational AI Platform](https://github.com/leapwithluvi/ai-chatbot)
+- 🔗 [Express TypeScript Starter (Backend Boilerplate)](https://github.com/leapwithluvi/express-typescript-starter)
 
 ---
 
@@ -137,8 +117,8 @@ npm run lint
 | Platform | Link |
 |----------|------|
 | 📧 Email | [itsluvi13@gmail.com](mailto:itsluvi13@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/luviaprilyansyahgabriel](https://www.linkedin.com/in/luviaprilyansyahgabriel) |
-| 🐙 GitHub | [github.com/leapwithluvi](https://github.com/leapwithluvi) |
+| 💼 LinkedIn | [luviaprilyansyahgabriel](https://www.linkedin.com/in/luviaprilyansyahgabriel) |
+| 🐙 GitHub | [leapwithluvi](https://github.com/leapwithluvi) |
 | 📸 Instagram | [@byl.rooks](https://www.instagram.com/byl.rooks) |
 
 ---
@@ -147,11 +127,18 @@ npm run lint
 
 This portfolio was inspired by the design of **[Delfan Rynaldo Laden](https://www.delfanladen.my.id/)**. Huge thanks for the inspiration!
 
+
+## 📋 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
+
 ---
 
-## 📝 License
+## 🚀 Let's Connect
 
-This project is licensed under the terms of the [MIT License](./LICENSE).
+I'm open to collaboration, freelance, and junior developer opportunities.
+
+If you're looking for a passionate Fullstack Developer, let's build something impactful together.
 
 ---
 
