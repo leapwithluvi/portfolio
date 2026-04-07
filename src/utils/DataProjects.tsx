@@ -36,33 +36,33 @@ export const DataProjects: Project[] = [
     stacks: ["Vite", "React", "Tailwind CSS", "Framer Motion", "Shadcn UI", "TypeScript"],
   },
   {
-    nameProject: "OSIS President Voting System",
-        typeProject: "Website",
-        deskProject:
+    nameProject: "Express TypeScript Starter - Professional Backend Boilerplate",
+    typeProject: "Backend / Boilerplate",
+    deskProject:
+      "A robust and secure boilerplate for building scalable RESTful APIs. It features a layered architecture, Express 5, TypeScript, Prisma, Zod validation, and industry-standard security practices like Helmet and Rate Limiting.",
+    status: "Complete",
+    linkRepo: "https://github.com/leapwithluvi/express-typescript-starter",
+    srcImg: backend,
+    stacks: ["Express.js", "Node.js", "PostgreSQL", "Prisma", "JWT", "Zod", "ESLint", "Prettier", "TypeScript"],
+  },
+  {
+      nameProject: "Nexus AI - Conversational AI Platform",
+      typeProject: "Website",
+      deskProject:
+        "Nexus AI is a lightweight yet powerful assistant designed for fast, intelligent, and private conversations. Built with a modern aesthetic, it provides a seamless chat experience while maintaining a professional and generic brand identity.",
+      status: "On-Going",
+      linkRepo: "https://github.com/leapwithluvi/ai-chatbot",
+      srcImg: nexusai,
+      stacks: ["Vite", "React", "Gemini API", "Tailwind CSS", "Shadcn UI", "Framer Motion", "Express.js", "PostgreSQL", "Prisma","TypeScript"],
+    },
+    {
+      nameProject: "OSIS President Voting System",
+      typeProject: "Website",
+      deskProject:
         "The OSIS President Voting System is a secure digital election platform developed to streamline the voting process for student council elections. It enables students to cast their votes online safely and transparently, with real-time vote counting.",
-        status: "Complete",
-        linkRepo: "https://github.com/leapwithluvi/ketos-voting-system",
+      status: "Complete",
+      linkRepo: "https://github.com/leapwithluvi/ketos-voting-system",
         srcImg: osis,
         stacks: ["React", "Express.js", "MongoDB", "Prisma", "Tailwind CSS"],
       },
-      {
-          nameProject: "Nexus AI - Conversational AI Platform",
-          typeProject: "Website",
-          deskProject:
-            "Nexus AI is a lightweight yet powerful assistant designed for fast, intelligent, and private conversations. Built with a modern aesthetic, it provides a seamless chat experience while maintaining a professional and generic brand identity.",
-          status: "On-Going",
-          linkRepo: "https://github.com/leapwithluvi/ai-chatbot",
-          srcImg: nexusai,
-          stacks: ["Vite", "React", "Gemini API", "Tailwind CSS", "Shadcn UI", "Framer Motion", "Express.js", "PostgreSQL", "Prisma","TypeScript"],
-        },
-        {
-          nameProject: "Express TypeScript Starter - Professional Backend Boilerplate",
-          typeProject: "Backend / Boilerplate",
-          deskProject:
-            "A robust and secure boilerplate for building scalable RESTful APIs. It features a layered architecture, Express 5, TypeScript, Prisma, Zod validation, and industry-standard security practices like Helmet and Rate Limiting.",
-          status: "On-Going",
-          linkRepo: "https://github.com/leapwithluvi/express-typescript-starter",
-          srcImg: backend,
-          stacks: ["Express.js", "Node.js", "PostgreSQL", "Prisma", "JWT", "Zod", "ESLint", "Prettier", "TypeScript"],
-        },
     ];
